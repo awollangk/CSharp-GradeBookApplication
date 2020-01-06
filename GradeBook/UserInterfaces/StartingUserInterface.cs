@@ -42,7 +42,7 @@ namespace GradeBook.UserInterfaces
             }
             var name = parts[1];
             GradeBookType type;
-            Enum.TryParse(parts[2], true, out type);
+            Enum.TryParse<GradeBookType>(parts[2], true, out type);
             BaseGradeBook gradeBook;
             switch(type)
             {
