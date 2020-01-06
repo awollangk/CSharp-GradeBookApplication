@@ -43,7 +43,7 @@ namespace GradeBook.UserInterfaces
             var name = parts[1];
             GradeBookType type;
 
-            if (!Enum.TryParse(parts[2], out type))
+            if (!Enum.TryParse(parts[2], true, out type))
             {
                 throw new ArgumentException($"Cannot translate {parts[2]} to a type of grade book.");
             }
